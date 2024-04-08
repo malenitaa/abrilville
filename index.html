@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--link a header-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--link a iconos-->
+        <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--link al resto de fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <title>Diseño y desarrollo a medida</title>
+    </head>
+    <body>
+        <header>
+            <div class = "header-left">
+                <div>
+                    <img src = "img/abrilville.mp4" alt = "logo">
+                </div>
+                <div>
+                    <a href="#start">Agencia</a>
+                </div>
+                <div>
+                    <a href="#enfoques">Enfoques</a>
+                </div>
+                <div>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class = "header-right">
+                <a href = "https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
+                <a href = "https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
+                <a href = "https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
+                <a>ES</a>
+                <span class="text-white px-1">|</span>
+                <a>EN</a>
+                <span class="text-white px-1">|</span>
+                <a>IT</a>
+            </div>
+        </header>
+
+        <main>
+            <section id = "start">
+                <h1 class = "title">Innovación digital en el mundo empresarial</h1>
+                <p>Nos destacamos en la creación de soluciones personalizadas para llevar tu
+                    negocio al mundo digital. Con amplia experiencia en diseño web y marketing digital,
+                    nos convertimos en tu aliado estratégico para impulsar el crecimiento de tu empresa.
+                </p>
+                <a href="#nosotros"><button>Nosotros</button></a>
+                <a href="#contacto"><button>Avancemos</button></a>
+            </section>
+            <section id = "nosotros">
+                <h2 class = "subtitle">Compartinos tu idea.</h2>
+                <p>Con accesibilidad en todos los dispositivos, tu negocio esta disponible
+                    todo el día, todos los días. Destacamos la usabilidad, proporcionando una navegación
+                    intuitiva y una experiencia de usuario satisfactoria.
+                </p>
+                <a href="#enfoques"><button>Nuestros enfoques</button></a>
+                <a href="#metodologia"><button>Metodología</button></a>
+            </section>
+            <section id = "enfoques">
+                <div class = "landing">
+                    <h3>Landing Pages</h3>
+
+                </div>
+                <div class = "institutional">
+                    <h3>Institucionales</h3>
+
+                </div>
+                <div class = "ecommerce">
+                    <h3>Ecommerce</h3>
+
+                </div>
+                <div class = "branding">
+                    <h3>Branding</h3>
+
+                </div>
+                <div class = "management">
+                    <h3>Management</h3>
+
+                </div>
+            </section>
+            <section id = "metodologia">
+                <h3>Cómo trabajamos</h3>
+                <div>
+                    <h4>Exploración:</h4> 
+                    <p>En esta fase, nos sumergimos en el contexto de tu proyecto, comprendemos
+                    tus necesidades y objetivos comerciales.
+                    </p>
+                </div>
+                <div>
+                    <h4>Análisis de la misión:</h4>
+                    <p>
+                    Basándonos en nuestra investigación inicial, desarrollamos
+                    una estrategia detallada que se alinea con tus metas y planteamos un plan de acción con una
+                    línea de tiempo clara.
+                    </p>
+                </div>
+                <div>
+                    <h4>Despegue:</h4>
+                    <p>
+                    Nuestro equipo de expertos transforma tu visión en realidad, creando una
+                    plataforma que refleja la identidad de tu marca y atrae a tu audiencia objetivo.
+                    </p>
+                </div>
+                <div>
+                    <h4>Viaje y órbita:</h4>
+                    <p>
+                    Realizamos pruebas exhaustivas para garantizar el correcto funcionamiento
+                    de tu proyecto antes de su lanzamiento al público.
+                    </p>
+                </div>
+                <div>
+                    <h4>Houston, no tenemos un problema:</h4>
+                    <p>
+                    Brindamos servicios de soporte continuo y mantenimiento para asegurarnos
+                    de que tu proyecto siga siendo efectivo y actualizado a lo largo del tiempo.
+                    </p>
+                </div>
+            </section>
+            <section id = "contacto">
+                <h3>Contactanos</h3>
+                <form action="/services/peluqueria" method="post" class="estilos-form" id="form">
+                    <div class = "form-label">
+                        <label for="nombre">Nombre completo</label><br>
+                        <input class type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class = "form-label">
+                        <label for="email">Email</label><br>
+                        <input class type="email" id="email" name="email" required>
+                    </div>
+                    <div class = "form-label">
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div class = "form-label">
+                        <button class = "boton" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    <footer>
+        <div class="footer-box">
+            <div class="content-footer">
+                <div class="sections-footer">
+                    <div class="logobox-footer">
+                        <img class="logo-footer" src="img/abrilville.mp4">
+                    </div>
+                </div> 
+                <div class="categories-footer">
+                    <div class="sections-footer">
+                        <p class="title-footer">Navegación</p>
+                        <ul class="navList-footer">
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="sections-footer">
+                        <p class="title-footer">Contactanos</p>
+                        <ul class="aboutList-footer">
+                            <li><a href="#">Trabaja con Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="reservados-footer">
+                        <p>Copyright @ 2024 Abrilville - Derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
