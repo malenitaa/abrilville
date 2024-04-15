@@ -294,9 +294,9 @@ input, textarea
     {margin-top: 20%;}
 
 /************FOOTER*************/
-footer
+footer, footer a
     {padding: 5px 0;
-    background-color: #0B1029;
+    background-color: rgb(38,38,38);
     color:#FFF}
 
 .footer-box
@@ -346,6 +346,7 @@ footer
     {text-align: center;
     font-size: 12px;
     color: #F8F8F8;
-    width: 85%;
-    margin-top: 20px;}
+    width: 100%;
+    margin-top: 20px;
+    }
     
