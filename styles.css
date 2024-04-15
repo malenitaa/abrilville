@@ -1,24 +1,23 @@
 /************TOTAL*************/
-header, .title, h1, h2, h3, h4, li, ul, form
+*
+    {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+header, .title, h1, h2, #metodologia h3, h4, li, ul, form
     {font-family: 'Phudu', sans-serif}
 
 a
     {text-decoration: none;
     color: #34322F}
-
-.title
-    {font-size: 36px; 
-    font-weight: bold; 
-    color: #34322F; 
-    text-align: center;
-    margin-bottom: 20px;}
     
 header 
     {display: flex;
     justify-content: space-between; 
-    align-items: center;}
+    align-items: center;
+    height: 3rem;}
 
-p
+p, h3
     {font-family: 'DM Sans Handgloves', sans-serif;}
 
 /************HEADER*************/
@@ -30,8 +29,8 @@ p
     {margin-right: 20px;}
 
 .header-left img
-    {width: 50%;
-    margin-left: 50px;}
+    {width: 20%;
+    margin-left: 20px;}
 
 .header-right
     {display: flex;
@@ -41,8 +40,219 @@ p
     {margin-left: 10px;
     margin-right: 10px;}
 
-/************MAIN*************/
+.header-left a:hover, .header-right a:hover
+    {color: white;
+    transition: 0.5s;
+    cursor: pointer;}
 
+/************MAIN*************/
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.bg
+    {animation: animate 10s ease infinite;
+    background: linear-gradient(90deg, rgba(162, 132, 164, 0.49) 11.5%, rgba(53, 160, 206, 0.49) 96%);
+    background-size: 400% 400%;}
+
+/*intro*/
+.start
+    {width: 80rem;
+    height: 40rem;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.title
+    {font-weight: bold;
+    color: white;
+    margin: 0 auto 20px;
+    width: 36rem;
+    height: 7rem;
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    line-height: normal;}
+
+.start p
+    {text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 56.5rem;
+    margin: 10px}
+
+.start button, #nosotros button   
+    {width: 10rem;
+    height: 3rem;
+    flex-shrink: 0;
+    background-color: #516C94;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    margin: 0 5px;
+    color: white;
+    margin: 15px;}
+
+.start button:hover, #nosotros button:hover
+    {background-color: #3f5373;
+    transition: 1s;}
+
+/*nosotros*/    
+.subtitle
+    {width: 29rem;
+    height: 4rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 5%;}
+
+#nosotros p
+    {color: #FFF;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px;
+    margin-left: 5%;}
+
+#nosotros button
+    {margin-left: 5%;}
+
+.middle-images
+    {width: 27rem;
+    height: 20rem;
+    margin: 0 auto;
+    text-align: center;}
+
+.middle-images img
+    {max-width: 100%;
+    height: auto;}
+
+/*enfoques*/
+#enfoques
+    {margin-top: 10%;
+    display: flex;             
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5%;}
+
+#enfoques h3
+    {font-size: small;
+    text-transform: capitalize;
+    color: white;}
+
+#enfoques p
+    {display: none}
+    
+
+.landing, .institutional,
+.ecommerce, .branding, .management
+    {width: 10rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    background-color: #323472;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;}
+
+.landing:hover, .institutional:hover,
+.ecommerce:hover, .branding:hover, .management:hover
+    {background-color: #8e90bd;
+    transition: 1s;}
+
+/*metodología*/
+#metodologia
+    {width: 80rem;
+    height: 35rem;
+    background: linear-gradient(183deg, #0B1029 2.25%, #4257C7 97.75%);
+    padding: 20px;}
+
+#metodologia h3
+    {color: #FFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;}
+
+#metodologia .cards
+    {display: flex;
+    margin-top: 50px;
+    justify-content: flex-start;
+    overflow-x: scroll;}
+
+.card
+    {flex-shrink: 0;
+    width: 18rem;
+    height: 18rem;
+    background: #D9D9D9;
+    text-align: center; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    margin: 10px;
+    cursor: pointer;}
+
+.front, .back
+    {position: absolute;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;}
+
+.front
+    {background: #D9D9D9;}
+
+.back
+    {background: #D9D9D9;
+    transform: rotateY(180deg);}
+
+.card
+    {position: relative;
+    width: 18rem;
+    height: 18rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; 
+    cursor: pointer;}
+
+.card:hover
+    {transform: rotateY(180deg);}
+
+.card h4
+    {font-size: 1.5rem;
+    margin-bottom: 10px;}
 
 /*formulario*/
 form
@@ -112,7 +322,3 @@ footer
     width: 85%;
     margin-top: 20px;}
     
-
-
-
-

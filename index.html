@@ -17,10 +17,10 @@
         <title>Diseño y desarrollo a medida</title>
     </head>
     <body>
-        <header>
+        <header class = "bg">
             <div class = "header-left">
                 <div>
-                    <img src = "img/abrilville.mp4" alt = "logo">
+                    <img class = "logo-header" src = "img/abrilville.mp4" alt = "logo">
                 </div>
                 <div>
                     <a href="#start">Agencia</a>
@@ -45,84 +45,143 @@
         </header>
 
         <main>
-            <section id = "start">
+            <section id = "start" class = "bg start">
                 <h1 class = "title">Innovación digital en el mundo empresarial</h1>
                 <p>Nos destacamos en la creación de soluciones personalizadas para llevar tu
                     negocio al mundo digital. Con amplia experiencia en diseño web y marketing digital,
                     nos convertimos en tu aliado estratégico para impulsar el crecimiento de tu empresa.
                 </p>
-                <a href="#nosotros"><button>Nosotros</button></a>
-                <a href="#contacto"><button>Avancemos</button></a>
+                <div class="button-container">
+                    <a href="#nosotros"><button>Nosotros</button></a>
+                    <a href="#contacto"><button>Avancemos</button></a>
+                </div>                
             </section>
-            <section id = "nosotros">
+            <section id = "nosotros" class = "bg">
                 <h2 class = "subtitle">Compartinos tu idea.</h2>
-                <p>Con accesibilidad en todos los dispositivos, tu negocio esta disponible
-                    todo el día, todos los días. Destacamos la usabilidad, proporcionando una navegación
+                <p>Con accesibilidad en todos los dispositivos, tu negocio esta disponible<br>
+                    todo el día, todos los días. Destacamos la usabilidad, proporcionando una navegación<br>
                     intuitiva y una experiencia de usuario satisfactoria.
                 </p>
                 <a href="#enfoques"><button>Nuestros enfoques</button></a>
                 <a href="#metodologia"><button>Metodología</button></a>
             </section>
+            <div class="middle-images">
+                <img src="img/development.png" alt="imagen">
+            </div>    
+
             <section id = "enfoques">
                 <div class = "landing">
                     <h3>Landing Pages</h3>
-
+                    <p>
+                        Una landing page es una página web enfocada y
+                        optimizada para lograr un objetivo de marketing o
+                        conversión específico, y su éxito se mide en función
+                        de su capacidad para lograr esa conversión.
+                    </p>
                 </div>
                 <div class = "institutional">
                     <h3>Institucionales</h3>
-
+                    <p>
+                        Una landing page es una página web enfocada y
+                        optimizada para lograr un objetivo de marketing o
+                        conversión específico, y su éxito se mide en función
+                        de su capacidad para lograr esa conversión.
+                    </p>
                 </div>
                 <div class = "ecommerce">
                     <h3>Ecommerce</h3>
-
+                    <p>
+                        Las tiendas online son esenciales para la venta de productos
+                        y servicios, permitiéndote vender globalmente las 24 horas del día.
+                        Automatizan procesos, evitan tareas manuales y optimizan tu tiempo.
+                        Además, fortalecen tu marca y expanden tu presencia online más allá de
+                        las redes sociales.
+                    </p>
                 </div>
                 <div class = "branding">
                     <h3>Branding</h3>
-
+                    <p>
+                        El branding es fundamental para establecer y fortalecer
+                        la identidad de tu empresa. En nuestro departamento de diseño,
+                        creamos logotipos, tarjetas de presentación, materiales administrativos
+                        y otros elementos visuales para garantizar una imagen coherente y atractiva
+                        de tu marca. Con nuestra experiencia, ayudamos a que tu negocio destaque y
+                        sea reconocido en el mercado.
+                    </p>
                 </div>
                 <div class = "management">
                     <h3>Management</h3>
-
+                    <p>
+                        Nuestro servicio de management se centra
+                        en optimizar la gestión de tu negocio para mejorar su
+                        eficiencia y rentabilidad. Ofrecemos soluciones personalizadas
+                        en áreas como la organización de procesos, la supervisión de equipos
+                        y la implementación de estrategias efectivas. Nuestro objetivo es ayudarte
+                        a alcanzar tus metas empresariales de manera más efectiva y con resultados
+                        sostenibles.
+                    </p>
                 </div>
             </section>
+
             <section id = "metodologia">
                 <h3>Cómo trabajamos</h3>
-                <div>
-                    <h4>Exploración:</h4> 
-                    <p>En esta fase, nos sumergimos en el contexto de tu proyecto, comprendemos
-                    tus necesidades y objetivos comerciales.
-                    </p>
-                </div>
-                <div>
-                    <h4>Análisis de la misión:</h4>
-                    <p>
-                    Basándonos en nuestra investigación inicial, desarrollamos
-                    una estrategia detallada que se alinea con tus metas y planteamos un plan de acción con una
-                    línea de tiempo clara.
-                    </p>
-                </div>
-                <div>
-                    <h4>Despegue:</h4>
-                    <p>
-                    Nuestro equipo de expertos transforma tu visión en realidad, creando una
-                    plataforma que refleja la identidad de tu marca y atrae a tu audiencia objetivo.
-                    </p>
-                </div>
-                <div>
-                    <h4>Viaje y órbita:</h4>
-                    <p>
-                    Realizamos pruebas exhaustivas para garantizar el correcto funcionamiento
-                    de tu proyecto antes de su lanzamiento al público.
-                    </p>
-                </div>
-                <div>
-                    <h4>Houston, no tenemos un problema:</h4>
-                    <p>
-                    Brindamos servicios de soporte continuo y mantenimiento para asegurarnos
-                    de que tu proyecto siga siendo efectivo y actualizado a lo largo del tiempo.
-                    </p>
+                <div class = "cards">
+                    <div class="card">
+                        <div class="front">
+                            <h4>Exploración</h4>
+                        </div>
+                        <div class="back">
+                            <p>En esta fase, nos sumergimos en el contexto de tu proyecto, comprendemos tus necesidades y objetivos comerciales.</p>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <div class = "front">
+                            <h4>Análisis de la misión</h4>
+                        </div>
+                        <div class = "back">
+                            <p>
+                            Basándonos en nuestra investigación inicial, desarrollamos
+                            una estrategia detallada que se alinea con tus metas y planteamos un plan de acción con una
+                            línea de tiempo clara.
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <div class = "front">
+                            <h4>Despegue</h4>
+                        </div>
+                        <div class = "back">
+                            <p>
+                            Nuestro equipo de expertos transforma tu visión en realidad, creando una
+                            plataforma que refleja la identidad de tu marca y atrae a tu audiencia objetivo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <div class = "front">
+                            <h4>Viaje y órbita</h4>
+                        </div>
+                        <div class = "back">
+                            <p>
+                            Realizamos pruebas exhaustivas para garantizar el correcto funcionamiento
+                            de tu proyecto antes de su lanzamiento al público.
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "card">
+                        <div class = "front">
+                            <h4>Houston, no tenemos un problema</h4>
+                        </div>
+                        <div class = "back">
+                            <p>
+                            Brindamos servicios de soporte continuo y mantenimiento para asegurarnos
+                            de que tu proyecto siga siendo efectivo y actualizado a lo largo del tiempo.
+                            </p>
+                        </div>  
+                    </div>
                 </div>
             </section>
+
             <section id = "contacto">
                 <h3>Contactanos</h3>
                 <form action="/services/peluqueria" method="post" class="estilos-form" id="form">
