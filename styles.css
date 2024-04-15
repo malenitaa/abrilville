@@ -96,7 +96,7 @@ p, h3
     width: 56.5rem;
     margin: 10px}
 
-.start button, #nosotros button   
+.start button, #nosotros button, .boton  
     {width: 10rem;
     height: 3rem;
     flex-shrink: 0;
@@ -110,7 +110,7 @@ p, h3
     color: white;
     margin: 15px;}
 
-.start button:hover, #nosotros button:hover
+.start button:hover, #nosotros button:hover, .boton:hover
     {background-color: #3f5373;
     transition: 1s;}
 
@@ -150,23 +150,19 @@ p, h3
 
 /*enfoques*/
 #enfoques
-    {margin-top: 10%;
-    display: flex;             
+    {display: flex;             
     justify-content: center;
     gap: 10px;
-    margin-top: 5%;}
+    margin: 10px;
+    margin-top: 50px;}
 
 #enfoques h3
     {font-size: small;
     text-transform: capitalize;
     color: white;}
-
-#enfoques p
-    {display: none}
     
-
-.landing, .institutional,
-.ecommerce, .branding, .management
+.landing, .institucionales, .ecommerce,
+.branding, .management
     {width: 10rem;
     height: 2.5rem;
     flex-shrink: 0;
@@ -176,16 +172,18 @@ p, h3
     border: none;
     padding: 10px;
     font-size: medium;
-    margin: 10px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;}
 
-.landing:hover, .institutional:hover,
-.ecommerce:hover, .branding:hover, .management:hover
+.landing:hover, .institucionales:hover, .ecommerce:hover,
+.branding:hover, .management:hover
     {background-color: #8e90bd;
     transition: 1s;}
+
+#enfoques p
+    {display: none;}
 
 /*metodología*/
 #metodologia
@@ -255,15 +253,45 @@ p, h3
     margin-bottom: 10px;}
 
 /*formulario*/
+#contacto h3
+    {display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 20px;}
+
 form
     {display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;}
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50rem;
+    height: 30rem;
+    flex-shrink: 0;
+    border-radius: 0.6rem;
+    background: #E3E5EB;
+    margin: 20px auto;}
 
 label
     {display: flex;
-    flex-direction: column;}
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px;}
+
+input, textarea
+    {width: 45rem;
+    border: none; 
+    border-bottom: 2px solid #000; 
+    background: none; 
+    margin-left: 20px; 
+    font-size: 1rem;
+    resize: none;}
+
+.boton
+    {margin-top: 20%;}
 
 /************FOOTER*************/
 footer
