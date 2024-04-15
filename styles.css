@@ -265,12 +265,11 @@ label
     {display: flex;
     flex-direction: column;}
 
-
-
-
 /************FOOTER*************/
 footer
-    {padding: 5px 0;}
+    {padding: 5px 0;
+    background-color: #0B1029;
+    color:#FFF}
 
 .footer-box
     {display: flex;
@@ -312,7 +311,7 @@ footer
 
 .navList-footer a,
 .aboutList-footer a
-    {color: #34322F}
+    {color:#FFF}
 
 /*copyright*/
 .reservados-footer
