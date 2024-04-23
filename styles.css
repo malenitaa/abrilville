@@ -45,7 +45,7 @@ header
     {color: white;
     transition: 0.5s;
     cursor: pointer;}
-    
+
 /************MAIN*************/
 @keyframes animate {
     0% {
@@ -357,7 +357,24 @@ footer, footer a
 /*Phones*/
 @media only screen and (max-width: 425px) {
     /*header*/        
-    
+    header 
+        {justify-content: space-between; 
+        align-items: center;}
+    .header-left 
+        {display: flex;
+        align-items: center;}
+    .header-left div 
+        {margin-right: 2px;}
+    .header-left img
+        {width: 10%;
+        margin-left: 2px;}
+    .header-right
+        {display: flex;
+        align-items: center;}
+    .header-right a
+        {margin-left: 2px;
+        margin-right: 2px;}
+
     /*intro*/
     .start
         {width: 100%;
