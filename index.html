@@ -16,32 +16,37 @@
         <title>Diseño y desarrollo a medida</title>
     </head>
     <body>
-        <header class = "bg">
-            <div class = "header-left">
+        <header class="bg">
+            <div class="header-left">
                 <div>
-                    <img class = "logo-header" src = "img/abrilville.mp4" alt = "logo">
+                    <img class="logo-header" src="img/abrilville.mp4" alt="logo">
                 </div>
-                <div>
-                    <a href="#start">Agencia</a>
-                </div>
-                <div>
-                    <a href="#enfoques">Enfoques</a>
-                </div>
-                <div>
-                    <a href="#contacto">Contacto</a>
-                </div>
+                <nav class="nav-links">
+                    <div><a href="#start">Agencia</a></div>
+                    <div><a href="#enfoques">Enfoques</a></div>
+                    <div><a href="#contacto">Contacto</a></div>
+                </nav>
             </div>
-            <div class = "header-right">
-                <a href = "https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
-                <a href = "https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
-                <a href = "https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
-                <a class = "text-white px-1">ES</a>
-                <span class = "text-white px-1">|</span>
-                <a class = "text-white px-1">EN</a>
-                <span class = "text-white px-1">|</span>
-                <a class = "text-white px-1">IT</a>
+            <div class="header-right">
+                <a href="https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
+                <a class="text-white px-1">ES</a>
+                <span class="text-white px-1">|</span>
+                <a class="text-white px-1">EN</a>
+                <span class="text-white px-1">|</span>
+                <a class="text-white px-1">IT</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
             </div>
         </header>
+    
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#start">Agencia</a>
+            <a href="#enfoques">Enfoques</a>
+            <a href="#contacto">Contacto</a>
+        </div>
 
         <main>
             <section id = "start" class = "bg start">
@@ -218,39 +223,50 @@
                 </form>
             </section>
         </main>
-    <footer>
-        <div class="footer-box">
-            <div class="content-footer">
-                <div class="sections-footer">
-                    <div class="logobox-footer">
-                        <a href = "#"><img class="logo-footer" src="img/abrilvilledarkmode.mp4" alt = "LOGO FOOTER"></a>
-                    </div>
-                </div> 
-                <div class="categories-footer">
+        <footer>
+            <div class="footer-box">
+                <div class="content-footer">
                     <div class="sections-footer">
-                        <p class="title-footer">Nosotros</p>
-                        <ul class="aboutList-footer">
-                            <li>Misión</li>
-                            <li>Visión</li>
-                            <li>Valores</li>
-                        </ul>
-                    </div>
-                    <div class="sections-footer">
-                        <p class="title-footer">Contactanos</p>
-                        <ul class="aboutList-footer">
-                            <li><a href="#">Trabaja con Nosotros</a></li>
-                        </ul>
-                    </div>
-                    <div class = "footer-right">
-                        <a href = "https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
-                        <a href = "https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
-                        <a href = "https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
-                    </div>
-                    <div class="reservados-footer">
-                        <p>Copyright @ 2024 Abrilville - Derechos reservados</p>
+                        <div class="logobox-footer">
+                            <a href = "#"><img class="logo-footer" src="img/abrilvilledarkmode.mp4" alt = "LOGO FOOTER"></a>
+                        </div>
+                    </div> 
+                    <div class="categories-footer">
+                        <div class="sections-footer">
+                            <p class="title-footer">Nosotros</p>
+                            <ul class="aboutList-footer">
+                                <li>Misión</li>
+                                <li>Visión</li>
+                                <li>Valores</li>
+                            </ul>
+                        </div>
+                        <div class="sections-footer">
+                            <p class="title-footer">Contactanos</p>
+                            <ul class="aboutList-footer">
+                                <li><a href="#">Trabaja con Nosotros</a></li>
+                            </ul>
+                        </div>
+                        <div class = "footer-right">
+                            <a href = "https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
+                            <a href = "https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
+                            <a href = "https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="reservados-footer">
+                            <p>Copyright @ 2024 Abrilville - Derechos reservados</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("mobile-menu");
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            }
+        </script>
+    </body>
 </html>
