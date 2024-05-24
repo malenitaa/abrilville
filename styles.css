@@ -157,10 +157,11 @@ header
     margin: 10px;
     margin-top: 50px;}
 
-#enfoques h3
+#enfoques h3 a
     {font-size: small;
     text-transform: capitalize;
-    color: white;}
+    color: white;
+    display: flex;}
     
 .landing, .institucionales, .ecommerce,
 .branding, .management
@@ -183,7 +184,7 @@ header
     {background-color: #8e90bd;
     transition: 1s;}
 
-#enfoques p
+.info
     {display: none;}
 
 /*metodología*/
@@ -298,11 +299,12 @@ input, textarea
 footer, footer a
     {padding: 5px 0;
     background-color: rgb(38,38,38);
-    color:#FFF}
+    color:#FFF;
+    text-align: center;}
 
 .footer-box
     {display: flex;
-    align-items: center;}
+    justify-content: space-between;}
 
 /*logo*/
 .logobox-footer
@@ -313,44 +315,40 @@ footer, footer a
 
 /*contenido*/
 .content-footer
-    {display: flex;}
+    {display: flex;
+    flex-direction: row;}
 
 .categories-footer
     {display: flex;
     flex-wrap: wrap;
-    gap: 10px;}
+    gap: 120px;}
 
 .sections-footer
-    {flex: 1;}
+    {flex: 1;
+    margin: 0 5px;}
 
 .title-footer
     {font-weight: bold;
     font-size: 15px;
     margin-bottom: 5px;}
 
-.navList-footer,
-.aboutList-footer
+.navList-footer, .aboutList-footer
     {list-style: none;
     padding: 0;
     font-size: 14px;}
 
-.navList-footer li,
-.aboutList-footer li
+.navList-footer li, .aboutList-footer li
     {margin-bottom: 5px;}
 
-.navList-footer a,
-.aboutList-footer a
-    {color:#FFF}
+.navList-footer a, .aboutList-footer a
+    {color:#FFF;}
 
 /*copyright*/
 .reservados-footer
-    {text-align: center;
-    font-size: 12px;
+    {font-size: 12px;
     color: #F8F8F8;
     width: 100%;
     margin-top: 20px;}
-    
-
 
 /*----------Breakpoints----------*/
 
@@ -364,16 +362,12 @@ footer, footer a
         {display: flex;
         align-items: center;}
     .header-left div 
-        {margin-right: 2px;}
+        {margin-right: 15%;}
     .header-left img
         {width: 10%;
         margin-left: 2px;}
     .header-right
-        {display: flex;
-        align-items: center;}
-    .header-right a
-        {margin-left: 2px;
-        margin-right: 2px;}
+        {display: none;}
 
     /*intro*/
     .start
@@ -453,5 +447,19 @@ footer, footer a
         {font-size: 1rem;}
     input, textarea
         {width: 20rem;}
+
     /*footer*/
+    .categories-footer
+        {display: flex;
+        flex-wrap: wrap;
+        gap: 10px;}
+    .title-footer
+        {font-size: 0.6rem;
+        margin-bottom: 5px;}
+    .navList-footer, .aboutList-footer
+        {list-style: none;
+        padding: 0;
+        font-size: 0.6rem;}
+    .reservados-footer
+        {font-size: 0.5rem;}
 }
