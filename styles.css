@@ -163,8 +163,7 @@ header
     color: white;
     display: flex;}
     
-.landing, .institucionales, .ecommerce,
-.branding, .management
+.enfoque a
     {width: 10rem;
     height: 2.5rem;
     flex-shrink: 0;
@@ -178,14 +177,29 @@ header
     justify-content: center;
     text-align: center;
     align-items: center;}
-
-.landing:hover, .institucionales:hover, .ecommerce:hover,
-.branding:hover, .management:hover
+    
+.enfoque a:hover
     {background-color: #8e90bd;
     transition: 1s;}
 
-.info
-    {display: none;}
+#info
+    {display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px; 
+    text-align: center;}
+
+.info-item
+    {display: none;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 10px;
+    max-width: 80%;}
+    
+    
+.info-item.active
+    {display: block;}
 
 /*metodología*/
 #metodologia

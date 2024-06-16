@@ -3,6 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <!-- Remember to include jQuery :) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--sweetalert-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <!--responsive-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--link a header-->
@@ -75,70 +84,61 @@
             </div>    
 
             <section id="enfoques">
-                <div class="landing">
+                <div class="enfoque">
                     <h3><a href="#landing-info">Landing Pages</a></h3>
                 </div>
-                <div class="institucionales">
+                <div class="enfoque">
                     <h3><a href="#institucionales-info">Institucionales</a></h3>
                 </div>
-                <div class="ecommerce">
+                <div class="enfoque">
                     <h3><a href="#ecommerce-info">Ecommerce</a></h3>
                 </div>
-                <div class="branding">
+                <div class="enfoque">
                     <h3><a href="#branding-info">Branding</a></h3>
                 </div>
-                <div class="management">
+                <div class="enfoque">
                     <h3><a href="#management-info">Management</a></h3>
                 </div>
-                <div class = "info">
-                    <div id="landing-info" class="info">
-                        <p>
-                            Una landing page es una página web enfocada y
-                            optimizada para lograr un objetivo de marketing o
-                            conversión específico, y su éxito se mide en función
-                            de su capacidad para lograr esa conversión.
-                        </p>
-                    </div>
-                    <div id="landing-info" class="info">
-                        <p>
-                            Una landing page es una página web enfocada y
-                            optimizada para lograr un objetivo de marketing o
-                            conversión específico, y su éxito se mide en función
-                            de su capacidad para lograr esa conversión.
-                        </p>
-                    </div>
-                    <div id="ecommerce-info" class="info">
-                        <p>
-                            Las tiendas online son esenciales para la venta de productos
-                            y servicios, permitiéndote vender globalmente las 24 horas del día.
-                            Automatizan procesos, evitan tareas manuales y optimizan tu tiempo.
-                            Además, fortalecen tu marca y expanden tu presencia online más allá de
-                            las redes sociales.
-                        </p>
-                    </div>
-                    <div id="branding-info" class="info">
-                        <p>
-                            El branding es fundamental para establecer y fortalecer
-                            la identidad de tu empresa. En nuestro departamento de diseño,
-                            creamos logotipos, tarjetas de presentación, materiales administrativos
-                            y otros elementos visuales para garantizar una imagen coherente y atractiva
-                            de tu marca. Con nuestra experiencia, ayudamos a que tu negocio destaque y
-                            sea reconocido en el mercado.
-                        </p>
-                    </div>
-                    <div id="management-info" class="info">
-                        <p>
-                            Nuestro servicio de management se centra
-                            en optimizar la gestión de tu negocio para mejorar su
-                            eficiencia y rentabilidad. Ofrecemos soluciones personalizadas
-                            en áreas como la organización de procesos, la supervisión de equipos
-                            y la implementación de estrategias efectivas. Nuestro objetivo es ayudarte
-                            a alcanzar tus metas empresariales de manera más efectiva y con resultados
-                            sostenibles.
-                        </p>
-                    </div>
-                </div>
             </section>
+            
+            <section id="info">
+                <div id="landing-info" class="info-item">
+                    <p>
+                        Una landing page es una página web enfocada y optimizada para lograr un objetivo de marketing o
+                        conversión específico, y su éxito se mide en función de su capacidad para lograr esa conversión.
+                    </p>
+                </div>
+                <div id="institucionales-info" class="info-item">
+                    <p>Una página web institucional es un sitio web que representa a una organización o institución.
+                        Su propósito es proporcionar información detallada sobre la empresa, sus valores, misión, visión, historia, servicios, productos y cualquier otra información relevante.
+                        La importancia de una página web institucional radica en su capacidad para establecer una presencia en línea sólida y confiable. Es una herramienta fundamental para la comunicación corporativa, la promoción de la marca y la generación de confianza entre los usuarios.
+                    </p>
+                </div>
+                <div id="ecommerce-info" class="info-item">
+                    <p>
+                        Las tiendas online son esenciales para la venta de productos y servicios, permitiéndote vender
+                        globalmente las 24 horas del día. Automatizan procesos, evitan tareas manuales y optimizan tu tiempo.
+                        Además, fortalecen tu marca y expanden tu presencia online más allá de las redes sociales.
+                    </p>
+                </div>
+                <div id="branding-info" class="info-item">
+                    <p>
+                        El branding es fundamental para establecer y fortalecer la identidad de tu empresa. En nuestro
+                        departamento de diseño, creamos logotipos, tarjetas de presentación, materiales administrativos y
+                        otros elementos visuales para garantizar una imagen coherente y atractiva de tu marca. Con nuestra
+                        experiencia, ayudamos a que tu negocio destaque y sea reconocido en el mercado.
+                    </p>
+                </div>
+                <div id="management-info" class="info-item">
+                    <p>
+                        Nuestro servicio de management se centra en optimizar la gestión de tu negocio para mejorar su
+                        eficiencia y rentabilidad. Ofrecemos soluciones personalizadas en áreas como la organización de
+                        procesos, la supervisión de equipos y la implementación de estrategias efectivas. Nuestro objetivo
+                        es ayudarte a alcanzar tus metas empresariales de manera más efectiva y con resultados sostenibles.
+                    </p>
+                </div>
+            </section>          
+            
 
             <section id = "metodologia">
                 <h3>Cómo trabajamos</h3>
@@ -231,15 +231,16 @@
                             <a href = "#"><img class="logo-footer" src="img/abrilvilledarkmode.mp4" alt = "LOGO FOOTER"></a>
                         </div>
                     </div> 
+
                     <div class="categories-footer">
                         <div class="sections-footer">
                             <p class="title-footer">Nosotros</p>
                             <ul class="aboutList-footer">
-                                <li>Misión</li>
-                                <li>Visión</li>
-                                <li>Valores</li>
-                            </ul>
-                        </div>
+                                <li><a href="#" class="mission-link" data-toggle="modal" data-target="#myModal">Misión</a></li>
+                                <li><a href="#" class="vision-link" data-toggle="modal" data-target="#myModal">Visión</a></li>
+                                <li><a href="#" class="values-link" data-toggle="modal" data-target="#myModal">Valores</a></li>
+                            </ul>                            
+                        </div>                        
                         <div class="sections-footer">
                             <p class="title-footer">Contactanos</p>
                             <ul class="aboutList-footer">
@@ -258,15 +259,17 @@
                 </div>
             </div>
         </footer>
+        <script src="enfoques.js"></script>
         <script>
-            function toggleMenu() {
-                var menu = document.getElementById("mobile-menu");
-                if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                } else {
-                    menu.style.display = "block";
-                }
-            }
+            document.getElementById('form').addEventListener('submit', function(event){
+                event.preventDefault(); 
+                Swal.fire({
+                    title: '¡Formulario Enviado!',
+                    text: '¡Se envió correctamente el formulario!',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                });
+            });
         </script>
     </body>
 </html>
