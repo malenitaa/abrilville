@@ -24,22 +24,25 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
         <title>Diseño y desarrollo a medida</title>
     </head>
+
+
     <body>
+
         <header class="bg">
             <div class="header-left">
                 <div>
                     <img class="logo-header" src="img/abrilville.mp4" alt="logo">
                 </div>
-                <nav class="nav-links">
+                <nav class="nav-links" id="navbar-links">
                     <div><a href="#start">Agencia</a></div>
                     <div><a href="#enfoques">Enfoques</a></div>
                     <div><a href="#contacto">Contacto</a></div>
                 </nav>
             </div>
             <div class="header-right">
-                <a href="https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
+                <a href="https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios" target=”_blank”><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/malena-villa-abrille/" target=”_blank”><i class="fa fa-linkedin"></i></a>
+                <a href="https://instagram.com/malena.jpeg" target=”_blank”><i class="fa fa-instagram"></i></a>
                 <a class="text-white px-1">ES</a>
                 <span class="text-white px-1">|</span>
                 <a class="text-white px-1">EN</a>
@@ -69,6 +72,7 @@
                     <a href="#contacto"><button>Avancemos</button></a>
                 </div>                
             </section>
+
             <section id = "nosotros" class = "bg">
                 <h2 class = "subtitle">Compartinos tu idea.</h2>
                 <p>Con accesibilidad en todos los dispositivos, tu negocio esta disponible<br>
@@ -139,9 +143,8 @@
                 </div>
             </section>          
             
-
             <section id = "metodologia">
-                <h3>Cómo trabajamos</h3>
+                <h3>Cómo  trabajamos</h3>
                 <div class = "cards">
                     <div class="card">
                         <div class="front">
@@ -223,6 +226,7 @@
                 </form>
             </section>
         </main>
+
         <footer>
             <div class="footer-box">
                 <div class="content-footer">
@@ -236,21 +240,21 @@
                         <div class="sections-footer">
                             <p class="title-footer">Nosotros</p>
                             <ul class="aboutList-footer">
-                                <li><a href="#" class="mission-link" data-toggle="modal" data-target="#myModal">Misión</a></li>
-                                <li><a href="#" class="vision-link" data-toggle="modal" data-target="#myModal">Visión</a></li>
-                                <li><a href="#" class="values-link" data-toggle="modal" data-target="#myModal">Valores</a></li>
-                            </ul>                            
-                        </div>                        
+                                <li><button class="open-modal no-button" data-modal-content="#mision-modal">Misión</button></li>
+                                <li><button class="open-modal no-button" data-modal-content="#vision-modal">Visión</button></li>
+                                <li><button class="open-modal no-button" data-modal-content="#valores-modal">Valores</button></li>
+                            </ul>            
+                        </div>            
                         <div class="sections-footer">
                             <p class="title-footer">Contactanos</p>
                             <ul class="aboutList-footer">
-                                <li><a href="#">Trabaja con Nosotros</a></li>
+                                <li><button class="open-modal no-button" data-modal-content="#trabaja-modal">Trabaja con Nosotros</button></li>
                             </ul>
                         </div>
                         <div class = "footer-right">
-                            <a href = "https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios"><i class="fa fa-whatsapp"></i></a>
-                            <a href = "https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin"></i></a>
-                            <a href = "https://instagram.com/malena.jpeg"><i class="fa fa-instagram"></i></a>
+                            <a href = "https://wa.me/1156090716/?text=¡Hola! Quisiera saber más sobre sus servicios" target=”_blank”><i class="fa fa-whatsapp"></i></a>
+                            <a href = "https://www.linkedin.com/in/malena-villa-abrille/"><i class="fa fa-linkedin" target=”_blank”></i></a>
+                            <a href = "https://instagram.com/malena.jpeg"><i class="fa fa-instagram" target=”_blank”></i></a>
                         </div>
                         <div class="reservados-footer">
                             <p>Copyright @ 2024 Abrilville - Derechos reservados</p>
@@ -259,6 +263,55 @@
                 </div>
             </div>
         </footer>
+        
+        <div id="mision-modal" class="modal">
+            <p>Crear soluciones de diseño y desarrollo a medida que transformen
+                las ideas en realidades tangibles y funcionales, superando las
+                expectativas de nuestros clientes y ayudándolos a alcanzar sus
+                objetivos de negocio de manera efectiva.</p>
+        </div>
+        <div id="vision-modal" class="modal">
+            <p>Ser reconocidos en la creación de soluciones personalizadas de diseño
+                y desarrollo, innovando constantemente para adaptarnos a las necesidades
+                cambiantes del mercado y estableciendo relaciones duraderas basadas
+                en la confianza y el éxito compartido.</p>
+        </div>
+        <div id="valores-modal" class="modal">
+            <p>Excelencia: Nos esforzamos por la excelencia en todo lo que hacemos, desde el
+                diseño creativo hasta la implementación técnica.<br>
+                Colaboración: Trabajamos en estrecha colaboración con nuestros clientes
+                para entender sus necesidades y objetivos específicos.<br>
+                Innovación: Buscamos continuamente nuevas ideas y tecnologías para ofrecer
+                soluciones de vanguardia y eficientes.<br>
+                Compromiso: Nos comprometemos a cumplir con nuestros estándares de calidad
+                y a entregar proyectos a tiempo y dentro del presupuesto.<br>
+                Integridad: Actuamos con honestidad, transparencia y ética en todas nuestras
+                relaciones y operaciones.</p>
+        </div>
+        <div id="trabaja-modal">
+            <form action="/submit-formulario-trabajo" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="cv">Adjuntar CV:</label><br>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.open-modal').click(function () {
+                    var modalContent = $(this).data('modal-content');
+                    $(modalContent).modal();
+                    return false;
+                });
+            });
+        </script>
         <script src="enfoques.js"></script>
         <script>
             document.getElementById('form').addEventListener('submit', function(event){
@@ -271,5 +324,6 @@
                 });
             });
         </script>
+        <script src="burga.js"></script>  
     </body>
 </html>

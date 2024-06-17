@@ -46,6 +46,38 @@ header
     transition: 0.5s;
     cursor: pointer;}
 
+.nav-links
+    {display: flex;
+    gap: 20px;}
+    
+
+/*menu hamburguesa*/
+.menu-icon
+    {display: none;
+    font-size: 24px;
+    cursor: pointer;}
+
+/*menu cel*/
+.mobile-menu
+    {display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    background-color: rgba(162, 132, 164, 0.9);
+    width: 100%;
+    text-align: center;}
+
+.mobile-menu a
+    {padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    text-decoration: none;}
+
+.mobile-menu a:hover
+    {background-color: #516C94;}
+
+
 /************MAIN*************/
 @keyframes animate {
     0% {
@@ -193,10 +225,10 @@ header
 .info-item
     {display: none;
     height: 100px;
-    background-color: lightgray;
+    background-color: #8e90bd;
     border-radius: 10px;
-    max-width: 80%;}
-    
+    max-width: 80%;
+    align-content: center;}
     
 .info-item.active
     {display: block;}
@@ -357,6 +389,22 @@ footer, footer a
 .navList-footer a, .aboutList-footer a
     {color:#FFF;}
 
+.no-button
+    {background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none}
+
+.modal
+    {background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*copyright*/
 .reservados-footer
     {font-size: 12px;
@@ -365,13 +413,13 @@ footer, footer a
     margin-top: 20px;}
 
 /*----------Breakpoints----------*/
-/* Estilos del menú hamburguesa */
+/*menu hamburguesa*/
 .menu-icon
     {display: none;
     font-size: 24px;
     cursor: pointer;}
 
-/* Estilos del menú */
+/*menu*/
 .mobile-menu
     {display: none;
     flex-direction: column;
@@ -408,10 +456,8 @@ footer, footer a
     .header-left div 
         {margin-right: 15%;}
     .header-left img
-        {width: 10%;
-        margin-left: 2px;}
-    .header-right
-        {display: none;}
+        {width: 30%;
+        margin-left: 0px;}
 
     /*intro*/
     .start
@@ -451,10 +497,18 @@ footer, footer a
         flex-direction: column; 
         gap: 10px;
         margin: 10px;
-        margin-top: 50px;}
+        margin-top: 50px;
+        align-items: center;}
     .landing, .institucionales, .ecommerce,
     .branding, .management
         {width: 100%;}
+    .info-item
+        {display: none;
+        height: 300px;
+        background-color: #8e90bd;
+        border-radius: 10px;
+        max-width: 80%;
+        align-content: center;}
 
     /*metodologias*/
     #metodologia
@@ -507,3 +561,36 @@ footer, footer a
     .reservados-footer
         {font-size: 0.5rem;}
 }
+/*formulario modal*/
+#trabaja-modal form
+    {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;}
+
+#trabaja-modal form input,
+#trabaja-modal form textarea
+    {width: 100%;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;}
+
+#trabaja-modal form .boton
+    {width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    background-color: #516C94;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+
+#trabaja-modal form .boton:hover
+    {background-color: #3f5373;}
