@@ -29,7 +29,7 @@ header
 .header-left div 
     {margin-right: 20px;}
 
-.header-left img
+.header-left video
     {width: 20%;
     margin-left: 20px;}
 
@@ -455,7 +455,7 @@ footer, footer a
         align-items: center;}
     .header-left div 
         {margin-right: 15%;}
-    .header-left img
+    .header-left video
         {width: 30%;
         margin-left: 0px;}
 
@@ -561,36 +561,8 @@ footer, footer a
     .reservados-footer
         {font-size: 0.5rem;}
 }
-/*formulario modal*/
-#trabaja-modal form
-    {display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f0f0f0;}
 
-#trabaja-modal form input,
-#trabaja-modal form textarea
-    {width: 100%;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 12px;}
-
-#trabaja-modal form .boton
-    {width: 100%;
-    max-width: 200px;
-    margin-top: 10px;
-    background-color: #516C94;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;}
-
-#trabaja-modal form .boton:hover
-    {background-color: #3f5373;}
+/*trabaja con nosotros*/
+.mail
+    {color: violet;
+    text-decoration: underline;}

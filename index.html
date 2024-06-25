@@ -31,8 +31,12 @@
         <header class="bg">
             <div class="header-left">
                 <div>
-                    <img class="logo-header" src="img/abrilville.mp4" alt="logo">
-                </div>
+                    <video class="logo-header" >
+                        <source src="img/abrilville.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+<!--                <img class="logo-header" src="img/abrilville.mp4" alt="logo">
+-->             </div>
                 <nav class="nav-links" id="navbar-links">
                     <div><a href="#start">Agencia</a></div>
                     <div><a href="#enfoques">Enfoques</a></div>
@@ -69,7 +73,7 @@
                 </p>
                 <div class="button-container">
                     <a href="#nosotros"><button>Nosotros</button></a>
-                    <a href="#contacto"><button>Avancemos</button></a>
+                    <a href="#contacto"><button>Comencemos</button></a>
                 </div>                
             </section>
 
@@ -232,7 +236,13 @@
                 <div class="content-footer">
                     <div class="sections-footer">
                         <div class="logobox-footer">
-                            <a href = "#"><img class="logo-footer" src="img/abrilvilledarkmode.mp4" alt = "LOGO FOOTER"></a>
+                            <a href = "#">
+                                <video class="logo-header" width="320" height="240">
+                                    <source src="img/abrilvilledarkmode.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                            <!-- <img class="logo-footer" src="img/abrilvilledarkmode.mp4" alt = "LOGO FOOTER"> -->
                         </div>
                     </div> 
 
@@ -288,16 +298,8 @@
                 Integridad: Actuamos con honestidad, transparencia y ética en todas nuestras
                 relaciones y operaciones.</p>
         </div>
-        <div id="trabaja-modal">
-            <form action="/submit-formulario-trabajo" method="POST" enctype="multipart/form-data">
-                <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="cv">Adjuntar CV:</label><br>
-                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
-                <input type="submit" value="Enviar">
-            </form>
+        <div id="trabaja-modal" class = "modal">
+            <p>Por favor enviar su CV mediante <a class = "mail" href = "mailto:rrhh@abrilville.com" target=”_blank”>correo electrónico</a></p>
         </div>
         
         <!-- Scripts -->
