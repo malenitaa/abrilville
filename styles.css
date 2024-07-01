@@ -98,8 +98,7 @@ header
 
 /*intro*/
 .start
-    {width: 80rem;
-    height: 40rem;
+    {height: 40rem;
     flex-shrink: 0;
     text-align: center;
     padding: 20px;
@@ -235,8 +234,7 @@ header
 
 /*metodología*/
 #metodologia
-    {width: 80rem;
-    height: 35rem;
+    {height: 35rem;
     background: linear-gradient(183deg, #0B1029 2.25%, #4257C7 97.75%);
     padding: 20px;}
 
@@ -251,7 +249,7 @@ header
 #metodologia .cards
     {display: flex;
     margin-top: 50px;
-    justify-content: flex-start;
+    justify-content:center;
     overflow-x: scroll;}
 
 .card
